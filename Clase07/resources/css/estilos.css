@@ -1,0 +1,214 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#banner{
+    background-color: rgb(22, 22, 121);
+    height: 60px;
+    font-family: fantasy;
+    font-size: 24pt;
+    justify-content: center;
+    
+}
+
+
+
+#banner li{
+    padding-top: 10px;
+    padding-right: 10px;
+    color: rgb(238, 238, 238);
+    text-shadow: 3px 0 0 rgb(190, 151, 21);
+}
+
+#banner li:hover{
+    color: rgb(255, 221, 87); 
+   
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 30px;
+}
+
+ul li {
+    list-style: none;
+    margin: 2px 5px;
+    padding: 3px;
+}
+
+#secDetalles figure{
+    margin-right: 20px;
+    margin-left: 20px;
+    box-shadow: grey 0 0 3px;
+}
+
+#secDetalles figcaption{
+    background-color: rgb(70, 70, 255);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: honeydew;
+    
+
+
+}
+#Tokyo{
+    display: flex;
+    flex: content;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 250, 202);
+    margin-bottom: 0px;
+    font-size: 30pt;
+    text-align: center;
+    font-family: fantasy;
+    color: rgb(22, 22, 121);
+    margin-bottom: 10px;
+}
+
+#Headimg{
+    width: 70%;
+    height: 70%;
+}
+
+
+
+#secDetalles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    margin-top: 40px;
+    margin-right: 50px;
+    font-size: x-large;
+    text-align: center;
+    font-family: verdana;
+    margin-bottom: 30px;
+}
+
+
+.miBoton { 
+    background-color: rgb(255, 239, 185); 
+    margin: 0px 5px;
+    padding: 5px; 
+    box-sizing: border-box; 
+    border: none; 
+    outline: none; 
+    position: relative;
+    font-family: Verdana; 
+   } 
+   .miBoton:hover { color: white; } 
+
+   .miBoton.styleOne::before{ 
+    content: ''; 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+    z-index: -1; 
+    /* Se convierte en el background está una capa mas alejado del usuarios*/
+    border: 2px solid rgb(226, 168, 42); 
+    transition: top, left, right, bottom, 200ms ease-in-out; 
+   } 
+
+   .miBoton.styleOne:hover::before{ 
+    top: -4px; 
+    left: -4px; 
+    right: -4px; 
+    bottom: -4px;
+   }
+   
+
+.miBoton a:hover{
+    color: rgb(224, 156, 8);
+}
+
+.miBoton.styleTwo::before{ 
+    content: ''; 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+    z-index: -1; 
+    /* Se convierte en el background está una capa mas alejado del usuarios*/
+    background-color: rgb(255, 201, 83); 
+    transition: transform 300ms ease-in-out; 
+    transform: scaleX(0); 
+    transform-origin: left; 
+   } 
+   .miBoton.styleTwo:hover::before{ transform: scaleX(1); } 
+   .miBoton.styleTwo { z-index: 1; } 
+   
+   .miBoton.styleThree::before{ 
+    content: ''; 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+    background-color: rgb(255, 239, 185);
+    z-index: -1;  
+    border-radius: 40%; 
+    transition: transform 500ms ease-in-out; 
+    transform: scale(1.5); 
+   } 
+   .miBoton.styleThree:hover::before{ transform:scale(0); } 
+   .miBoton.styleThree{ 
+    z-index: 1; 
+    overflow: hidden; 
+    background-color: rgb(255, 201, 83); 
+   }
+
+   .miBoton.styleFour::before{ 
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    height: 2px; 
+    background-color: rgb(255, 201, 83); 
+    transition: transform 300ms ease-in-out; 
+    transform: scaleX(0); 
+   } 
+   .miBoton.styleFour:hover::before{ transform: scaleX(1); }
+
+   .oculto{
+       opacity: 0;
+   }
+
+
+   .detalleInfo {
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .detalleInfo thead tr {
+    background-color: rgb(255, 203, 89);
+    color: rgb(22, 22, 121);
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .detalleInfo th,
+  .detalleInfo td {
+    padding: 12px 15px;
+  }
+  
+  .detalleInfo tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .detalleInfo tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  
